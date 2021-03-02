@@ -16,7 +16,7 @@ https://www.npmjs.com/package/@aichemy/testgold-cypress-plugin
    environment variable and enable the interceptor:
 
    ```
-   export CYPRESS_TG_ENABLED=true ( use SET YPRESS_TG_ENABLED=true for windows)
+   export CYPRESS_TG_ENABLED=true ( use SET CYPRESS_TG_ENABLED=true for windows)
    
    export CYPRESS_TG_TOKEN=aiotoken-goes-here ( use SET CYPRESS_TG_TOKEN=aiotoken-goes-here for windows)
    ```
