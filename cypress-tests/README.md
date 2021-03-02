@@ -16,11 +16,13 @@ https://www.npmjs.com/package/@aichemy/testgold-cypress-plugin
    environment variable and enable the interceptor:
 
    ```
-   export CYPRESS_TG_ENABLED=true
-   export CYPRESS_TG_TOKEN=aiotoken-goes-here
+   export CYPRESS_TG_ENABLED=true ( use SET YPRESS_TG_ENABLED=true for windows)
+   
+   export CYPRESS_TG_TOKEN=aiotoken-goes-here ( use SET CYPRESS_TG_TOKEN=aiotoken-goes-here for windows)
    ```
 
 4. Run `./node_modules/.bin/cypress open` to start the Cypress runner.
+ "node_modules/.bin/cypress" in windows
 
 5. Run the `reactbank-old.spec.js` and `reactbank-new.spec.js` in order to see
    the healing in action. Other tests are in: https://github.com/sshivaji/testgold_sanity_tests/tree/master/cypress-tests/cypress/integration.
