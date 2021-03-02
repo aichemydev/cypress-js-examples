@@ -1,0 +1,19 @@
+{
+  "name": "cypress-tests",
+  "version": "1.0.0",
+  "description": "Cypress tests for the interceptor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TestGold",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.5.0"
+  },
+  "dependencies": {
+    "@aichemy/testgold-cypress-plugin": "^1.2.1",
+    "node-fetch": "^2.6.1"
+  },
+  "repository": "https://github.com/sshivaji/testgold_sanity_tests"
+}
