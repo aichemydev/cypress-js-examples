@@ -1,7 +1,6 @@
 #cypress-examples
-
-1)Start by going to https://nocode.testgold.dev/login website. Create a login either using your github id or google or using your email and password.
-2)Login and go to https://nocode.testgold.dev/settings . ( Activation might take a few hours after login)
+Start by going to https://nocode.testgold.dev/login website. Create a login either using your github id or google or using your email and password.
+Login and go to https://nocode.testgold.dev/settings . ( Activation might take a few hours after login)
 3)The token visible in this page is referred to as the CYPRESS_TG_TOKEN .
 4)On your command line Run npm install -D to install Cypress  and the @aichemy/testgold-cypress-plugin package.
 5)Run the below commands to set the respective tokens to activate Test Gold .
