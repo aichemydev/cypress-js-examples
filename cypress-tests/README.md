@@ -25,7 +25,8 @@ https://www.npmjs.com/package/@aichemy/testgold-cypress-plugin
  "node_modules/.bin/cypress" in windows
 
 5. Run the `reactbank-old.spec.js` and `reactbank-new.spec.js` in order to see
-   the healing in action. Other tests are in: https://github.com/sshivaji/testgold_sanity_tests/tree/master/cypress-tests/cypress/integration.
+   the healing in action. Other tests are in: 
+   https://github.com/aichemydev/cypress-examples/tree/main/cypress-tests/cypress/integration
 
 
 ## Running tests with the private Github NPM repo
@@ -69,4 +70,4 @@ https://www.npmjs.com/package/@aichemy/testgold-cypress-plugin
 9. Run `./node_modules/.bin/cypress open` to start the Cypress runner.
 
 10. Run the `reactbank-old.spec.js` and `reactbank-new.spec.js` in order to see
-   the healing in action. Other tests are in: https://github.com/sshivaji/testgold_sanity_tests/tree/master/cypress-tests/cypress/integration.
+   the healing in action. Other tests are in: https://github.com/aichemydev/cypress-examples/tree/main/cypress-tests/cypress/integration
