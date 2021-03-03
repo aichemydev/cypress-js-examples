@@ -15,5 +15,5 @@
     "@aichemy/testgold-cypress-plugin": "^1.2.1",
     "node-fetch": "^2.6.1"
   },
-  "repository": "https://github.com/sshivaji/testgold_sanity_tests"
+  "repository": "https://github.com/aichemydev/cypress-examples"
 }
