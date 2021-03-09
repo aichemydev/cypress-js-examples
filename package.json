@@ -4,7 +4,8 @@
   "description": "Cypress tests for the interceptor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open",
+    "testgold": "bash -c 'source .env && cypress open'"
   },
   "author": "TestGold",
   "license": "MIT",

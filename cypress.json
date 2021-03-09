@@ -11,7 +11,7 @@
     "enabled": true,
     "serverTimeout": 180.0,
     "handleFailure": "suggest-xpaths",
-    "filterEnabled": false,
+    "filterEnabled": true,
     "filterDisplayed": false,
     "neighborMaxDist": -1,
     "fastHeal": false,
