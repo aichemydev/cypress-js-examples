@@ -28,4 +28,5 @@ Other tests are in: https://github.com/aichemydev/cypress-examples/cypress/integ
 
 Note that the same test reactbank-new-spec.js will fail if CYPRESS_TG_ENABLED=false or a token variable is not specified.
 
-# npm run testgold runs the interceptor with TestGold
+
+  npm run testgold runs the interceptor with TestGold
