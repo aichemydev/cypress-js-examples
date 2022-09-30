@@ -1,32 +1,47 @@
-Start by going to https://nocode.testgold.dev/login website. Create a login either using your github id or google or using your email and password.   
+# How to run these examples
 
-Login and go to https://nocode.testgold.dev/settings . ( Activation might take a few hours after login)   
+Make sure you have [NodeJS](https://nodejs.org) installed, along with `npm`.
 
-The token visible in this page is referred to as the CYPRESS_TG_TOKEN .   
+1. Sign up for an account at [app.wring.dev](https://app.wring.dev). You'll need
+   to wait until we can verify your sign-up and activate your account; it
+   usually takes less than a couple of hours.
+2. Once your account is activated, login and click on **Installation** in the
+   sidebar to see instructions to download the Cypress plugin as well as the
+   token required to let the plugin talk to our API.
+3. Set the required environment variable `CYPRESS_TG_TOKEN='your-token-here'` by
+   copy-pasting the command shown on the **Installation** page.
+4. Set the required environment variable `CYPRESS_TG_ENABLED='true'` to enable
+   the plugin.
 
-On your command line Run npm install -D to install Cypress  and the @aichemy/testgold-cypress-plugin package.   
+Now, you can run:
 
-See the `cypress.json` file for options to tweak for the Interceptor. Also,
-   look at the `cypress/support/index.js` and `cypress/plugins/index.js` file to
-   see how the Cypress plugin is activated.
+```
+npm install
+```
 
-Run the below commands to set the respective tokens to activate Test Gold.
+to install Cypress and our plugin.
 
-    export CYPRESS_TG_ENABLED=true ( use SET CYPRESS_TG_ENABLED=true for windows)  
-    export CYPRESS_TG_TOKEN=aiotoken-goes-here ( use SET CYPRESS_TG_TOKEN=aiotoken-goes-here for windows)  
-    
-Run
+Once that's done, run:
 
-    "npm test" to start the Cypress runner.   
- 
- This will open the Cypress UI and show all the tests available in the folder.  
- 
-Run the reactbank-old.spec.js first to train Test Gold and wait for it to complete.
+```
+./node_modules/.bin/cypress open
+```
 
-Run the reactbank-new.spec.js in order to see the healing in action.   
-Other tests are in: https://github.com/aichemydev/cypress-examples/cypress/integration
+to open Cypress. You may run any of the tests already present in the
+`cypress/integration` directory. We recommend running these two tests in order:
 
-Note that the same test reactbank-new-spec.js will fail if CYPRESS_TG_ENABLED=false or a token variable is not specified.
+1. Run `reactbank-old-spec.js` to see the Wring API train itself on a working
+   example of a website.
+2. Run `reactbank-new-spec.js` to see the Wring API automatically heal selectors
+   that are now broken because the website page elements moved or were updated.
 
+Try running `reactbank-new-spec.js` with the environment variable
+`CYPRESS_TG_ENABLED='false'` to see the test run failing without healed
+selectors.
 
-```npm run testgold``` runs the interceptor with TestGold
+Additional documentation on the Wring Cypress plugin can be found at its
+[NPMJS.com page](https://www.npmjs.com/package/@aichemy/wring-cypress-plugin).
+The plugin can be configured using a `wring` settings object in the
+`cypress.json` file. This repository has an
+[example](https://github.com/aichemydev/cypress-js-examples/blob/main/cypress.json)
+that you can customize.
