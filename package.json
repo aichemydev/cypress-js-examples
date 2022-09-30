@@ -7,14 +7,13 @@
     "test": "cypress open",
     "testgold": "bash -c 'source .env && cypress open'"
   },
-  "author": "TestGold",
+  "author": "AiChemy",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^6.5.0"
+    "cypress": "^9"
   },
   "dependencies": {
-    "@aichemy/testgold-cypress-plugin": "^1.2.1",
-    "node-fetch": "^2.6.1"
+    "@aichemy/wring-cypress-plugin": "^2.0.0"
   },
-  "repository": "https://github.com/aichemydev/cypress-examples"
+  "repository": "https://github.com/aichemydev/cypress-js-examples"
 }
