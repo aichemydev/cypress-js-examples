@@ -5,9 +5,8 @@
     "runMode": 1,
     "openMode": 1
   },
-  "experimentalRunEvents": true,
   "defaultCommandTimeout": 30000,
-  "testGold": {
+  "wring": {
     "enabled": true,
     "serverTimeout": 180.0,
     "handleFailure": "suggest-xpaths",
